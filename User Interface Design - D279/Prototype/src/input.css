@@ -1,0 +1,63 @@
+/* npx tailwindcss -i ./src/input.css -o ./public/style.css --watch */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1,
+	h2,
+	h3,
+	h4 {
+		@apply font-bold;
+	}
+	h1 {
+		@apply text-4xl;
+	}
+	h2 {
+		@apply text-3xl;
+	}
+	h3 {
+		@apply text-2xl;
+	}
+	h4 {
+		@apply text-xl;
+	}
+	p {
+		@apply text-sm;
+	}
+
+	form {
+		@apply rounded-xl p-4;
+	}
+	label {
+		@apply mt-4;
+	}
+	input,
+	select,
+	textarea {
+		@apply m-1 rounded bg-gray-50 p-1;
+	}
+}
+.header-background-image-home {
+	background-image: url(../\(resources\)/connection.jpg);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 50%;
+	overflow: hidden;
+}
+.active-link,
+.link-hover:hover {
+	border-bottom: 3px solid;
+}
+.link-hover-small:hover {
+	border-bottom: 2px solid;
+}
+.footer-links {
+	@apply mx-1 leading-loose font-bold text-primary-lightblue link-hover-small;
+}
+.nav-links {
+	@apply font-bold text-xl pt-3 link-hover;
+}

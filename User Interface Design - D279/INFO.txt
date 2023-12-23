@@ -2,4 +2,19 @@
 
 https://unsplash.com/license
 
-	
+
+	BRANDING
+
+Primary colors:
+Midnight Blue - #003B6D
+Blue Sky- #6699CC
+
+Secondary colors:
+Dim gray - #676767
+Silver- #BDBDBD
+
+•	Select from the colors listed to use for the following page elements:
+•	Header bar, navigation bar, line breaks, text such as Title/Header for H1 and H2 Levels, body text colors, and link text colors 
+•	Keep in mind any accessibility issues that prevents users with disabilities from using the website such as font size, the contrast between text color and background, and so on.
+
+
