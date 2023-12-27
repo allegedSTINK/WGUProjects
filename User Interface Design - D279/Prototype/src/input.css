@@ -83,10 +83,21 @@
 		@apply rounded-xl mx-auto px-2 py-1 font-bold align-baseline;
 		font-variant: small-caps;
 	}
-	/* .card-left {
-		@apply;
+	.card {
+		@apply flex bg-primary-blue bg-opacity-90 rounded-md p-7 mx-auto my-10 border-secondary-gray border-opacity-75;
+		width: clamp(250px, 70%, 800px);
 	}
-	.card-right {
-		@apply;
-	} */
+	.card-text {
+		@apply flex flex-col text-left mx-auto my-3 px-3 py-3;
+	}
+	.card-text p {
+		@apply text-secondary-silver text-xl leading-10;
+	}
+	.card-image {
+		@apply my-auto me-10;
+		width: 40%; border: 2px solid black; box-shadow: 0 0 15px;
+	}
+	.card-btn {
+		@apply bg-primary-lightblue text-primary-blue float-right mb-5 me-20 px-2 py-1 text-center font-extrabold;
+	}
 }
