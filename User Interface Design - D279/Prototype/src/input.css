@@ -9,7 +9,11 @@
 	h2,
 	h3,
 	h4 {
-		@apply font-bold;
+		@apply font-bold text-primary-blue pb-5 indent-5;
+		font-variant: small-caps;
+	}
+	h1:first-of-type {
+		@apply pt-5;
 	}
 	h1 {
 		@apply text-4xl;
@@ -24,7 +28,7 @@
 		@apply text-xl;
 	}
 	p {
-		@apply text-sm;
+		@apply text-xl;
 	}
 
 	form {
@@ -38,26 +42,51 @@
 	textarea {
 		@apply m-1 rounded bg-gray-50 p-1;
 	}
+	section {
+		@apply py-5;
+	}
+	li {
+		@apply font-semibold;
+	}
+	section li a {
+		@apply text-primary-blue font-semibold;
+	}
+	section li a:hover {
+		@apply underline text-primary-lightblue;
+	}
 }
-.header-background-image-home {
-	background-image: url(../\(resources\)/connection.jpg);
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 50%;
-	overflow: hidden;
-}
-.active-link,
-.link-hover:hover {
-	border-bottom: 3px solid;
-}
-.link-hover-small:hover {
-	border-bottom: 2px solid;
-}
-.footer-links {
-	@apply mx-1 leading-loose font-bold text-primary-lightblue link-hover-small;
-}
-.nav-links {
-	@apply font-bold text-xl pt-3 link-hover;
+
+@layer components {
+	.header-background-image-home {
+		background-image: url(../\(resources\)/connection.jpg);
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 50%;
+		overflow: hidden;
+	}
+	.active-link,
+	.link-hover:hover {
+		border-bottom: 3px solid;
+	}
+	.link-hover-small:hover {
+		border-bottom: 2px solid;
+	}
+	.footer-links {
+		@apply mx-1 leading-loose font-bold text-primary-lightblue link-hover-small;
+	}
+	.nav-links {
+		@apply font-bold text-xl pt-3 link-hover;
+	}
+	.btn {
+		@apply rounded-xl mx-auto px-2 py-1 font-bold align-baseline;
+		font-variant: small-caps;
+	}
+	/* .card-left {
+		@apply;
+	}
+	.card-right {
+		@apply;
+	} */
 }
