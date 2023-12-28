@@ -11,6 +11,7 @@
 	h4 {
 		@apply font-bold text-primary-blue pb-5 indent-5;
 		font-variant: small-caps;
+		text-shadow: 1px 1px 1px;
 	}
 	h1:first-of-type {
 		@apply pt-5;
@@ -45,6 +46,12 @@
 	section {
 		@apply py-5;
 	}
+	section:first-of-type {
+		margin-top: 50px;
+	}
+	section:last-of-type {
+		margin-bottom: 50px;
+	}
 	li {
 		@apply font-semibold;
 	}
@@ -53,6 +60,13 @@
 	}
 	section li a:hover {
 		@apply underline text-primary-lightblue;
+	}
+	nav,
+	footer {
+		box-shadow: 0 0 3px;
+	}
+	main {
+		@apply container flex flex-col mx-auto px-20 divide-y divide-primary-blue text-gray-900;
 	}
 }
 
@@ -80,12 +94,15 @@
 		@apply font-bold text-xl pt-3 link-hover;
 	}
 	.btn {
-		@apply rounded-xl mx-auto px-2 py-1 font-bold align-baseline;
+		@apply rounded-xl mx-auto px-2 py-1 font-bold align-baseline text-gray-950 tracking-wider;
 		font-variant: small-caps;
+		box-shadow: 1px 1px 3px;
 	}
 	.card {
 		@apply flex bg-primary-blue bg-opacity-90 rounded-md p-7 mx-auto my-10 border-secondary-gray border-opacity-75;
-		width: clamp(250px, 70%, 800px);
+		width: clamp(750px, 70%, 950px);
+		height: 350px;
+		box-shadow: 5px 5px 15px;
 	}
 	.card-text {
 		@apply flex flex-col text-left mx-auto my-3 px-3 py-3;
@@ -95,9 +112,11 @@
 	}
 	.card-image {
 		@apply my-auto me-10;
-		width: 40%; border: 2px solid black; box-shadow: 0 0 15px;
+		width: 40%;
+		border: 2px solid black;
+		box-shadow: 5px 5px 15px;
 	}
 	.card-btn {
-		@apply bg-primary-lightblue text-primary-blue float-right mb-5 me-20 px-2 py-1 text-center font-extrabold;
+		@apply bg-primary-lightblue text-gray-950 tracking-wider float-right mb-5 me-20 px-2 py-1 text-center font-extrabold hover:bg-primary-blue hover:text-primary-lightblue hover:shadow-none;
 	}
 }
