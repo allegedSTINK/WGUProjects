@@ -486,6 +486,19 @@ p {
   line-height: 1.75rem;
 }
 
+p a {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 59 109 / var(--tw-text-opacity));
+}
+
+p a:hover {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(102 153 204 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
 form {
   border-radius: 0.75rem;
   padding: 1rem;
@@ -537,6 +550,62 @@ section li a:hover {
 nav,
 	footer {
   box-shadow: 0 0 3px;
+}
+
+main {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  main {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  main {
+    max-width: 1536px;
+  }
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  --tw-divide-opacity: 1;
+  border-color: rgb(0 59 109 / var(--tw-divide-opacity));
+}
+
+main {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -637,40 +706,6 @@ nav,
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-}
-
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
 }
 
 .header-background-image-home {
@@ -916,17 +951,6 @@ nav,
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
-.divide-primary-blue > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(0 59 109 / var(--tw-divide-opacity));
-}
-
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -950,11 +974,6 @@ nav,
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .py-3 {
@@ -1008,11 +1027,6 @@ nav,
 
 .leading-loose {
   line-height: 2;
-}
-
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-primary-blue {

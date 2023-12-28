@@ -31,7 +31,12 @@
 	p {
 		@apply text-xl;
 	}
-
+	p a {
+		@apply text-primary-blue font-bold;
+	}
+	p a:hover {
+		@apply text-primary-lightblue font-bold underline;
+	}
 	form {
 		@apply rounded-xl p-4;
 	}
