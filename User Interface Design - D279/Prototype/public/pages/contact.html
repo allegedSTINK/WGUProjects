@@ -6,7 +6,7 @@
 		<title>Paradigm Pet Professionals - Prototype</title>
 		<link rel="stylesheet" href="../style.css" />
 	</head>
-	<body class="bg-secondary-silver w-auto">
+	<body class="bg-gray-100 w-full">
 		<header class="w-full" style="margin-bottom: 80px">
 			<nav class="bg-white w-full mx-auto px-10 py-3 fixed top-0 z-50">
 				<div class="flex flex-grow justify-between items-center">
@@ -23,15 +23,15 @@
 						<a href="./cats.html" class="font-bold text-xl pt-3 link-hover text-primary-lightblue"
 							>Cats</a
 						>
-						<a
-							href="./dogs.html"
-							class="font-bold text-xl pt-3 link-hover text-primary-lightblue active-link"
+						<a href="./dogs.html" class="font-bold text-xl pt-3 link-hover text-primary-lightblue"
 							>Dogs</a
 						>
 						<a href="./fish.html" class="font-bold text-xl pt-3 link-hover text-primary-lightblue"
 							>Fish</a
 						>
-						<a href="./contact.html" class="font-bold text-xl pt-3 link-hover text-primary-blue"
+						<a
+							href="./contact.html"
+							class="font-bold text-xl pt-3 link-hover text-primary-blue active-link"
 							>Contact Us</a
 						>
 					</div>
@@ -51,58 +51,80 @@
 			</section>
 			<section id="contact-form">
 				<h1 class="capitalize">New Pet Care Consultation</h1>
-				<div class="w-full max-w-xs">
-					<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="#">
-						<div class="" id="user-info">
+				<div class="w-full max-w-2xl">
+					<form class="px-8 pt-6 pb-8 mb-4 flex flex-col" action="#">
+						<div class="flex flex-col" id="user-info">
 							<h2>User Info</h2>
+
 							<div class="mb-4" id="user-name">
 								<label class="font-bold text-lg" for="user-name">Name</label>
 								<input
-									class="shadow appearance-none border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight focus:outline-none focus:shadow-outline"
+									class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 									type="text" />
 							</div>
-							<div class="flex flex-wrap -mx-3 mb-4">
-								<div id="user-phone">
+							<div class="flex flex-row justify-between">
+								<div class="mb-4" id="user-phone">
 									<label class="font-bold text-lg" for="user-phone">Phone</label>
 									<input
-										class="shadow appearance-none border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight focus:outline-none focus:shadow-outline"
-										type="number" />
+										class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
+										type="text" />
 								</div>
 
-								<div id="user-email">
+								<div class="mb-4" id="user-email">
 									<label class="font-bold text-lg" for="user-email">Email</label>
 									<input
-										class="shadow appearance-none border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight focus:outline-none focus:shadow-outline"
+										class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 										type="email" />
 								</div>
 							</div>
 
-							<div class="mb-6" id="user-timezone">
+							<div class="mb-8" id="user-timezone">
 								<label class="font-bold text-lg" for="user-timezone">Time-zone</label>
 								<select
-									class="shadow appearance-none borde border-primary-bluer rounded w-full py-2 px-3 text-secondary-gray leading-tight focus:outline-none focus:shadow-outline"
+									class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 									name=""
-									id=""></select>
+									id="">
+									<option value="null">Select a Time Zone</option>
+									<option value="HST">(UTC-10:00) Hawaii Standard Time</option>
+									<option value="AKST">(UTC-09:00) Alaska Standard Time</option>
+									<option value="PST">(UTC-08:00) Pacific Standard Time</option>
+									<option value="MST">(UTC-07:00) Mountain Standard Time</option>
+									<option value="CST">(UTC-06:00) Central Standard Time</option>
+									<option value="EST">(UTC-05:00) Eastern Standard Time</option>
+								</select>
 							</div>
 						</div>
 
-						<div class="" id="pet-info">
-							<h2>Pet Info</h2>
-							<div class="" id="pet-name">
-								<label class="font-bold text-lg" for="pet-name">Name</label>
-								<input class="" type="text" />
-							</div>
+						<div class="flex flex-col mb-8">
+							<div class="" id="pet-info">
+								<h2>Pet Info</h2>
+								<div class="mb-8" id="pet-name">
+									<label class="font-bold text-lg" for="pet-name">Name</label>
+									<input
+										class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
+										type="text" />
+								</div>
+								<div class="flex flex-row justify-between">
+									<div class="mb-8" id="pet-type">
+										<label class="font-bold text-lg" for="pet-type">Type</label>
+										<input
+											class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
+											type="text" />
+									</div>
 
-							<div class="" id="pet-type">
-								<label class="font-bold text-lg" for="pet-type">Type</label>
-								<input class="" type="text" />
-							</div>
-
-							<div class="" id="pet-age">
-								<label class="font-bold text-lg" for="pet-age">Age</label>
-								<input class="" type="text" />
+									<div class="mb-8" id="pet-age">
+										<label class="font-bold text-lg" for="pet-age">Age</label>
+										<input
+											class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
+											type="text" />
+									</div>
+								</div>
 							</div>
 						</div>
+						<input
+							class="btn w-full text-primary-lightblue bg-primary-blue text-xl hover:cursor-pointer hover:text-primary-blue hover:bg-primary-lightblue"
+							style="text-shadow: 0.5px 0.5px 0.5px silver"
+							type="submit" />
 					</form>
 				</div>
 			</section>
