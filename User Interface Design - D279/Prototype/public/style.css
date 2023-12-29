@@ -500,8 +500,6 @@ p a:hover {
 }
 
 form {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   display: flex;
@@ -514,24 +512,36 @@ form {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   width: clamp(750px, 70%, 950px);
-  min-height: 350px;
   box-shadow: 5px 5px 15px;
 }
 
-form h1,
-	label {
-  line-height: 2.5rem;
+form h1 {
   --tw-text-opacity: 1;
   color: rgb(189 189 189 / var(--tw-text-opacity));
 }
 
-input,
+label,
+	input,
 	select {
-  margin: 0.25rem;
-  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(103 103 103 / var(--tw-text-opacity));
+}
+
+label {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-  padding: 0.25rem;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+input {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 section {

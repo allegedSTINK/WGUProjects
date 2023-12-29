@@ -6,9 +6,9 @@
 		<title>Paradigm Pet Professionals - Prototype</title>
 		<link rel="stylesheet" href="../style.css" />
 	</head>
-	<body class="bg-secondary-silver w-full">
-		<header class="w-full" style="margin-bottom: 80px">
-			<nav class="bg-white w-full mx-auto px-10 py-3 fixed top-0 z-50">
+	<body class="bg-secondary-silver w-auto">
+		<header class="w-auto" style="margin-bottom: 80px">
+			<nav class="bg-white w-auto mx-auto px-10 py-3 fixed top-0 z-50">
 				<div class="flex flex-grow justify-between items-center">
 					<a href="../index.html">
 						<img
@@ -51,54 +51,46 @@
 			</section>
 			<section id="contact-form">
 				<h1 class="capitalize">New Pet Care Consultation</h1>
-				<form action="#" class="card-form">
-					<section class="" id="user-info">
+
+				<form action="#">
+					<section class="flex flex-col" id="user-info">
 						<h1>User Info</h1>
-						<div id="user-name">
-							<div>
-								<label for="user-name">Name</label>
-							</div>
-							<div></div>
+						<div class="flex" id="user-name">
+							<label class="p5 w-auto" for="user-name">Name</label>
+							<input class="p5 w-auto" type="text" />
 						</div>
-						<div id="user-phone">
-							<div>
-								<label for="user-phone">Phone</label>
-							</div>
-							<div></div>
+
+						<div class="flex" id="user-phone">
+							<label class="inline-block p-5 w-auto" for="user-phone">Phone</label>
+							<input class="inline-block p-5 w-auto" type="text" />
 						</div>
-						<div id="user-email">
-							<div>
-								<label for="user-email">Email</label>
-							</div>
-							<div></div>
+
+						<div class="flex" id="user-email">
+							<label class="inline-block p-5 w-auto" for="user-email">Email</label>
+							<input class="inline-block p-5 w-auto" type="text" />
 						</div>
-						<div id="user-timezone">
-							<div>
-								<label for="user-timezone">Time-zone</label>
-							</div>
-							<div></div>
+
+						<div class="flex" id="user-timezone">
+							<label class="inline-block p-5 w-auto" for="user-timezone">Time-zone</label>
+							<input class="inline-block p-5 w-auto" type="text" />
 						</div>
 					</section>
 
-					<section id="pet-info">
+					<section class="flex flex-col" id="pet-info">
 						<h1>Pet Info</h1>
-						<div id="pet-name">
-							<div>
-								<label for="pet-name">Name</label>
-							</div>
-							<div></div>
+						<div class="flex" id="pet-name">
+							<label class="inline-block p-5 w-auto" for="pet-name">Name</label>
+							<input class="inline-block p-5 w-auto" type="text" />
 						</div>
-						<div id="pet-type">
-							<div>
-								<label for="pet-type">Type</label>
-							</div>
-							<div></div>
+
+						<div class="flex" id="pet-type">
+							<label class="inline-block p-5 w-auto" for="pet-type">Type</label>
+							<input class="inline-block p-5 w-auto" type="text" />
 						</div>
-						<div id="pet-age">
-							<div>
-								<label for="pet-age">Age</label>
-							</div>
-							<div></div>
+
+						<div class="flex" id="pet-age">
+							<label class="inline-block p-5 w-auto" for="pet-age">Age</label>
+							<input class="inline-block p-5 w-auto" type="text" />
 						</div>
 					</section>
 				</form>

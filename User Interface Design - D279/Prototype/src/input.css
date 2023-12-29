@@ -38,19 +38,25 @@
 		@apply text-primary-lightblue font-bold underline;
 	}
 	form {
-		@apply flex flex-col bg-primary-blue bg-opacity-90 rounded-md px-10 mx-auto my-10 border-secondary-gray border-opacity-75;
+		@apply flex flex-col bg-primary-blue bg-opacity-90 rounded-md px-10  my-10 border-secondary-gray border-opacity-75;
 		width: clamp(750px, 70%, 950px);
-		min-height: 350px;
 		box-shadow: 5px 5px 15px;
 	}
-	form h1,
-	label {
-		@apply text-secondary-silver leading-10;
+	form h1 {
+		@apply text-secondary-silver;
 	}
+	label,
 	input,
 	select {
-		@apply m-1 rounded bg-gray-50 p-1;
+		@apply text-secondary-gray font-bold my-2;
 	}
+	label {
+		@apply rounded-tl rounded-bl bg-gray-300;
+	}
+	input {
+		@apply rounded-tr rounded-br bg-gray-100;
+	}
+
 	section {
 		@apply py-5;
 	}
@@ -126,5 +132,8 @@
 	}
 	.card-btn {
 		@apply bg-primary-lightblue text-gray-950 tracking-wider float-right mb-5 me-20 px-2 py-1 text-center font-extrabold hover:bg-primary-blue hover:text-primary-lightblue hover:shadow-none;
+	}
+	.label-wrapper {
+		@apply my-5;
 	}
 }
