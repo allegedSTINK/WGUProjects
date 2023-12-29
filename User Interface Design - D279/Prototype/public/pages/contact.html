@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body class="bg-secondary-silver w-auto">
-		<header class="w-auto" style="margin-bottom: 80px">
-			<nav class="bg-white w-auto mx-auto px-10 py-3 fixed top-0 z-50">
+		<header class="w-full" style="margin-bottom: 80px">
+			<nav class="bg-white w-full mx-auto px-10 py-3 fixed top-0 z-50">
 				<div class="flex flex-grow justify-between items-center">
 					<a href="../index.html">
 						<img
@@ -23,15 +23,15 @@
 						<a href="./cats.html" class="font-bold text-xl pt-3 link-hover text-primary-lightblue"
 							>Cats</a
 						>
-						<a href="./dogs.html" class="font-bold text-xl pt-3 link-hover text-primary-lightblue"
+						<a
+							href="./dogs.html"
+							class="font-bold text-xl pt-3 link-hover text-primary-lightblue active-link"
 							>Dogs</a
 						>
 						<a href="./fish.html" class="font-bold text-xl pt-3 link-hover text-primary-lightblue"
 							>Fish</a
 						>
-						<a
-							href="./contact.html"
-							class="font-bold text-xl pt-3 link-hover text-primary-blue active-link"
+						<a href="./contact.html" class="font-bold text-xl pt-3 link-hover text-primary-blue"
 							>Contact Us</a
 						>
 					</div>
@@ -107,9 +107,9 @@
 				</div>
 			</section>
 		</main>
-		<footer class="bg-white py-4">
+		<footer class="flex flex-col bg-white py-4">
 			<div class="flex justify-evenly">
-				<div class="">
+				<div class="flex flex-col">
 					<h3 class="leading-loose text-primary-blue">Site Map</h3>
 					<ul>
 						<li><a class="footer-links" href="../index.html">Home</a></li>
@@ -119,7 +119,7 @@
 						<li><a class="footer-links" href="./contact.html">Contact Us</a></li>
 					</ul>
 				</div>
-				<div class="">
+				<div class="flex flex-col">
 					<h3 class="leading-loose text-primary-blue">Rescue and Adoption</h3>
 					<ul>
 						<li>
@@ -151,7 +151,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="">
+				<div class="flex flex-col">
 					<h3 class="leading-loose text-primary-blue">Additional Resources</h3>
 					<ul class="columns-2">
 						<li>
@@ -195,7 +195,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="">
+				<div class="flex flex-col">
 					<img src="../../(resources)/logo1.png" alt="" style="max-height: 175px; margin: auto" />
 				</div>
 			</div>
