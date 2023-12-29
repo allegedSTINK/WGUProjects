@@ -51,54 +51,65 @@
 			</section>
 			<section id="contact-form">
 				<h1 class="capitalize">New Pet Care Consultation</h1>
+				<div class="w-full max-w-xs">
+					<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="#">
+						<div class="" id="user-info">
+							<h2>User Info</h2>
+							<div class="mb-4" id="user-name">
+								<label class="font-bold text-lg" for="user-name">Name</label>
+								<input
+									class="shadow appearance-none border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight focus:outline-none focus:shadow-outline"
+									type="text" />
+							</div>
+							<div class="flex flex-wrap -mx-3 mb-4">
+								<div id="user-phone">
+									<label class="font-bold text-lg" for="user-phone">Phone</label>
+									<input
+										class="shadow appearance-none border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight focus:outline-none focus:shadow-outline"
+										type="number" />
+								</div>
 
-				<form action="#">
-					<section class="flex flex-col" id="user-info">
-						<h1>User Info</h1>
-						<div class="flex" id="user-name">
-							<label class="p5 w-auto" for="user-name">Name</label>
-							<input class="p5 w-auto" type="text" />
+								<div id="user-email">
+									<label class="font-bold text-lg" for="user-email">Email</label>
+									<input
+										class="shadow appearance-none border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight focus:outline-none focus:shadow-outline"
+										type="email" />
+								</div>
+							</div>
+
+							<div class="mb-6" id="user-timezone">
+								<label class="font-bold text-lg" for="user-timezone">Time-zone</label>
+								<select
+									class="shadow appearance-none borde border-primary-bluer rounded w-full py-2 px-3 text-secondary-gray leading-tight focus:outline-none focus:shadow-outline"
+									name=""
+									id=""></select>
+							</div>
 						</div>
 
-						<div class="flex" id="user-phone">
-							<label class="inline-block p-5 w-auto" for="user-phone">Phone</label>
-							<input class="inline-block p-5 w-auto" type="text" />
-						</div>
+						<div class="" id="pet-info">
+							<h2>Pet Info</h2>
+							<div class="" id="pet-name">
+								<label class="font-bold text-lg" for="pet-name">Name</label>
+								<input class="" type="text" />
+							</div>
 
-						<div class="flex" id="user-email">
-							<label class="inline-block p-5 w-auto" for="user-email">Email</label>
-							<input class="inline-block p-5 w-auto" type="text" />
-						</div>
+							<div class="" id="pet-type">
+								<label class="font-bold text-lg" for="pet-type">Type</label>
+								<input class="" type="text" />
+							</div>
 
-						<div class="flex" id="user-timezone">
-							<label class="inline-block p-5 w-auto" for="user-timezone">Time-zone</label>
-							<input class="inline-block p-5 w-auto" type="text" />
+							<div class="" id="pet-age">
+								<label class="font-bold text-lg" for="pet-age">Age</label>
+								<input class="" type="text" />
+							</div>
 						</div>
-					</section>
-
-					<section class="flex flex-col" id="pet-info">
-						<h1>Pet Info</h1>
-						<div class="flex" id="pet-name">
-							<label class="inline-block p-5 w-auto" for="pet-name">Name</label>
-							<input class="inline-block p-5 w-auto" type="text" />
-						</div>
-
-						<div class="flex" id="pet-type">
-							<label class="inline-block p-5 w-auto" for="pet-type">Type</label>
-							<input class="inline-block p-5 w-auto" type="text" />
-						</div>
-
-						<div class="flex" id="pet-age">
-							<label class="inline-block p-5 w-auto" for="pet-age">Age</label>
-							<input class="inline-block p-5 w-auto" type="text" />
-						</div>
-					</section>
-				</form>
+					</form>
+				</div>
 			</section>
 		</main>
-		<footer class="flex flex-col bg-white py-4">
+		<footer class="bg-white py-4">
 			<div class="flex justify-evenly">
-				<div class="flex flex-col">
+				<div class="">
 					<h3 class="leading-loose text-primary-blue">Site Map</h3>
 					<ul>
 						<li><a class="footer-links" href="../index.html">Home</a></li>
@@ -108,7 +119,7 @@
 						<li><a class="footer-links" href="./contact.html">Contact Us</a></li>
 					</ul>
 				</div>
-				<div class="flex flex-col">
+				<div class="">
 					<h3 class="leading-loose text-primary-blue">Rescue and Adoption</h3>
 					<ul>
 						<li>
@@ -140,7 +151,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="flex flex-col">
+				<div class="">
 					<h3 class="leading-loose text-primary-blue">Additional Resources</h3>
 					<ul class="columns-2">
 						<li>
@@ -184,7 +195,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="flex flex-col">
+				<div class="">
 					<img src="../../(resources)/logo1.png" alt="" style="max-height: 175px; margin: auto" />
 				</div>
 			</div>

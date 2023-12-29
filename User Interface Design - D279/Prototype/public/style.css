@@ -499,51 +499,6 @@ p a:hover {
   text-decoration-line: underline;
 }
 
-form {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0.375rem;
-  border-color: rgb(103 103 103 / var(--tw-border-opacity));
-  --tw-border-opacity: 0.75;
-  background-color: rgb(0 59 109 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.9;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  width: clamp(750px, 70%, 950px);
-  box-shadow: 5px 5px 15px;
-}
-
-form h1 {
-  --tw-text-opacity: 1;
-  color: rgb(189 189 189 / var(--tw-text-opacity));
-}
-
-label,
-	input,
-	select {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(103 103 103 / var(--tw-text-opacity));
-}
-
-label {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-input {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 section {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
