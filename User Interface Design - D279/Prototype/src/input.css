@@ -38,14 +38,17 @@
 		@apply text-primary-lightblue font-bold underline;
 	}
 	form {
-		@apply rounded-xl p-4;
+		@apply flex flex-col bg-primary-blue bg-opacity-90 rounded-md px-10 mx-auto my-10 border-secondary-gray border-opacity-75;
+		width: clamp(750px, 70%, 950px);
+		min-height: 350px;
+		box-shadow: 5px 5px 15px;
 	}
+	form h1,
 	label {
-		@apply mt-4;
+		@apply text-secondary-silver leading-10;
 	}
 	input,
-	select,
-	textarea {
+	select {
 		@apply m-1 rounded bg-gray-50 p-1;
 	}
 	section {
@@ -106,7 +109,7 @@
 	.card {
 		@apply flex bg-primary-blue bg-opacity-90 rounded-md p-7 mx-auto my-10 border-secondary-gray border-opacity-75;
 		width: clamp(750px, 70%, 950px);
-		height: 350px;
+		min-height: 350px;
 		box-shadow: 5px 5px 15px;
 	}
 	.card-text {
