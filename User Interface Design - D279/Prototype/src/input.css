@@ -60,7 +60,7 @@
 		box-shadow: 0 0 3px;
 	}
 	main {
-		@apply container flex flex-col mx-auto px-20 divide-y divide-primary-blue text-gray-900;
+		@apply container flex flex-col mx-auto px-10 divide-y divide-primary-blue text-gray-900;
 	}
 }
 
