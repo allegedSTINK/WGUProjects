@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Paradigm Pet Professionals - Prototype</title>
 		<link rel="stylesheet" href="../style.css" />
+		<script src="../contact.js" defer></script>
 	</head>
 	<body class="bg-gray-100 w-full">
 		<header class="w-full" style="margin-bottom: 80px">
@@ -49,38 +50,42 @@
 					within 48 hours to schedule a consultation. All fields are required.
 				</p>
 			</section>
-			<section id="contact-form">
+			<section id="contact">
 				<h1 class="capitalize">New Pet Care Consultation</h1>
 				<div class="w-full max-w-2xl">
-					<form class="px-8 pt-6 pb-8 mb-4 flex flex-col" action="#">
+					<form id="contact-form" class="px-8 pt-6 pb-8 mb-4 flex flex-col" action="#">
 						<div class="flex flex-col" id="user-info">
 							<h2>User Info</h2>
 
-							<div class="mb-4" id="user-name">
+							<div class="mb-4">
 								<label class="font-bold text-lg" for="user-name">Name</label>
 								<input
+									id="user-name"
 									class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 									type="text" />
 							</div>
 							<div class="flex flex-row justify-between">
-								<div class="mb-4" id="user-phone">
+								<div class="mb-4">
 									<label class="font-bold text-lg" for="user-phone">Phone</label>
 									<input
+										id="user-phone"
 										class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 										type="text" />
 								</div>
 
-								<div class="mb-4" id="user-email">
+								<div class="mb-4">
 									<label class="font-bold text-lg" for="user-email">Email</label>
 									<input
+										id="user-email"
 										class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 										type="email" />
 								</div>
 							</div>
 
-							<div class="mb-8" id="user-timezone">
+							<div class="mb-8">
 								<label class="font-bold text-lg" for="user-timezone">Time-zone</label>
 								<select
+									id="user-timezone"
 									class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 									name=""
 									id="">
@@ -98,30 +103,35 @@
 						<div class="flex flex-col mb-8">
 							<div class="" id="pet-info">
 								<h2>Pet Info</h2>
-								<div class="mb-8" id="pet-name">
+								<div class="mb-8">
 									<label class="font-bold text-lg" for="pet-name">Name</label>
 									<input
+										id="pet-name"
 										class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 										type="text" />
 								</div>
 								<div class="flex flex-row justify-between">
-									<div class="mb-8" id="pet-type">
+									<div class="mb-8">
 										<label class="font-bold text-lg" for="pet-type">Type</label>
 										<input
+											id="pet-type"
 											class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 											type="text" />
 									</div>
 
-									<div class="mb-8" id="pet-age">
+									<div class="mb-8">
 										<label class="font-bold text-lg" for="pet-age">Age</label>
 										<input
+											id="pet-age"
 											class="border border-primary-blue rounded w-full py-2 px-3 text-secondary-gray leading-tight"
 											type="text" />
 									</div>
 								</div>
 							</div>
 						</div>
+
 						<input
+							id="form-submit"
 							class="btn w-full text-primary-lightblue bg-primary-blue text-xl hover:cursor-pointer hover:text-primary-blue hover:bg-primary-lightblue"
 							style="text-shadow: 0.5px 0.5px 0.5px silver"
 							type="submit" />
