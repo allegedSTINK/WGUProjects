@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	color: #808080;
+	background-color: #fff;
+}
+
+nav,
+footer {
+	background-color: #f0f0f0;
+}
+nav {
+	border-bottom: 4px #333 25px;
+}
+
+hr {
+	color: #a9a9a9;
+}
+
+.active {
+	@apply underline;
+}
+
+.btn {
+	@apply rounded-xl;
+	color: #000;
+	background-color: #a9a9a9;
+	border: 2px 2px 2px #d3d3d3;
+}
