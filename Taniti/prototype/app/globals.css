@@ -34,14 +34,20 @@ h3 {
 	@apply border-b-2 border-black;
 }
 
-.btn {
-	@apply rounded-xl;
+.button {
+	@apply rounded-3xl mx-auto inline-block px-3 py-1 text-2xl font-bold;
 	color: #000;
 	background-color: #a9a9a9;
-	border: 2px 2px 2px #d3d3d3;
+	border: 1px solid black;
+	box-shadow: 2px 2px 4px black;
 }
 
 .nav-shadow {
 	border-bottom: 2px solid #333;
-	box-shadow: 0 0 5px;
+	box-shadow: 0 0 4px;
+}
+
+.card {
+	@apply rounded-lg bg-slate-300 px-4 pt-2 pb-4 border border-black;
+	box-shadow: 2px 2px 4px black;
 }
