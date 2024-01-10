@@ -1,12 +1,15 @@
 "use client";
 import React from "react";
-import Nav from "../../components/nav/nav";
+
+import NavBar from "@/app/components/header/nav/NavBar";
 
 const Food = () => {
 	return (
 		<div>
-			<Nav />
-			<h1>This is the Food page!</h1>
+			<NavBar />
+			<div className="container flex flex-col mx-auto">
+				<h1>This is a page!</h1>
+			</div>
 		</div>
 	);
 };

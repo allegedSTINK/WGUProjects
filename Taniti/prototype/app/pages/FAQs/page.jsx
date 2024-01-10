@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import NavBar from "./components/header/nav/NavBar";
+import NavBar from "@/app/components/header/nav/NavBar";
 
-export default function Home() {
+const FAQ = () => {
 	return (
 		<div>
 			<NavBar />
@@ -11,4 +11,6 @@ export default function Home() {
 			</div>
 		</div>
 	);
-}
+};
+
+export default FAQ;

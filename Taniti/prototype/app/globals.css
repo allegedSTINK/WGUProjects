@@ -11,16 +11,27 @@ nav,
 footer {
 	background-color: #f0f0f0;
 }
-nav {
-	border-bottom: 4px #333 25px;
-}
 
 hr {
 	color: #a9a9a9;
 }
-
+h1,
+h2,
+h3 {
+	@apply font-bold;
+	color: #333;
+}
+h1 {
+	@apply text-3xl;
+}
+h2 {
+	@apply text-2xl;
+}
+h3 {
+	@apply text-xl;
+}
 .active {
-	@apply underline;
+	@apply border-b-2 border-black;
 }
 
 .btn {
@@ -28,4 +39,9 @@ hr {
 	color: #000;
 	background-color: #a9a9a9;
 	border: 2px 2px 2px #d3d3d3;
+}
+
+.nav-shadow {
+	border-bottom: 2px solid #333;
+	box-shadow: 0 0 5px;
 }
