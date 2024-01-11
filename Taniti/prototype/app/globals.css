@@ -3,48 +3,70 @@
 @tailwind utilities;
 
 body {
-	color: #808080;
-	background-color: #fff;
+	color: #666;
+	background-color: #f9f9f9;
 }
 
-nav,
-footer {
-	background-color: #f0f0f0;
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 hr {
+	@apply my-10;
 	color: #a9a9a9;
 }
 h1,
 h2,
 h3 {
-	@apply font-bold;
+	@apply font-bold drop-shadow-md;
 	color: #333;
 }
 h1 {
-	@apply text-3xl;
+	@apply text-6xl;
 }
 h2 {
-	@apply text-2xl;
+	@apply text-4xl;
 }
 h3 {
-	@apply text-xl;
+	@apply text-2xl;
 }
 .active {
 	@apply border-b-2 border-black;
 }
 
 .button {
-	@apply rounded-3xl mx-auto inline-block px-3 py-1 text-2xl font-bold;
+	@apply rounded-3xl mx-auto inline-block px-3 py-1 font-bold;
 	color: #000;
 	background-color: #a9a9a9;
 	border: 1px solid black;
 	box-shadow: 2px 2px 4px black;
 }
 
+.input-field {
+	border: 1px solid black;
+	box-shadow: 2px 2px 4px black;
+	background-color: #f9f9f9;
+}
+
+.submit-button {
+	background-color: #a9a9a9;
+	color: #000;
+	border: 1px solid black;
+	border-left: none;
+	box-shadow: 2px 2px 4px black;
+}
+
 .nav-shadow {
 	border-bottom: 2px solid #333;
-	box-shadow: 0 0 4px;
+	box-shadow: 0 0 8px;
+}
+
+.footer-shadow {
+	border-top: 2px solid #333;
+	box-shadow: 0 0 8px;
 }
 
 .card {

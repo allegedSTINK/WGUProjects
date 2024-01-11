@@ -3,7 +3,7 @@ import React from "react";
 const Logo = () => {
 	return (
 		<svg
-      className="ms-3 mt-3"
+      className="ms-10 mt-3 drop-shadow-lg"
 			width="246.777"
 			height="71.893"
 			viewBox="0 0 246.777 71.893"

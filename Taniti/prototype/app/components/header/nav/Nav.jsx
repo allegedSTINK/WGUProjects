@@ -7,7 +7,7 @@ const Nav = () => {
 	const pathname = usePathname();
 
 	return (
-		<div className="w-1/2 flex justify-between items-end pe-3">
+		<div className="w-1/2 flex justify-between items-end pe-10 text-xl font-semibold">
 			<div className="block">
 				<Link //prettier-ignore
 					className={pathname === "/" ? "active" : ""}

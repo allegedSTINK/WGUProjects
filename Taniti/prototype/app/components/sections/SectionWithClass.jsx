@@ -1,14 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const SectionWithClass = ({title, body, classes}) => {
-  return (
-    <sectionWithClass>
-      <h2 className='underline mb-5'>{title}</h2>
-      <div className={classes}>
-        {body}
-      </div>
-    </sectionWithClass>
-  )
-}
+const SectionWithClass = ({ title, body, classes, containerClass = "" }) => {
+	return (
+		<div className={containerClass}>
+			<h2 className="ms-5 mb-10">{title}</h2>
+			<div className={classes}>{body}</div>
+		</div>
+	);
+};
 
-export default SectionWithClass
+export default SectionWithClass;

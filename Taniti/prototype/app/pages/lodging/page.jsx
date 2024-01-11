@@ -1,117 +1,77 @@
 "use client";
 import React from "react";
 import NavBar from "@/app/components/header/nav/NavBar";
-import SingleParagraphSection from "@/app/components/sections/SingleParagraphSection";
 import SectionWithClass from "@/app/components/sections/SectionWithClass";
 import MediumCard from "@/app/components/cards/MediumCard";
 import Footer from "@/app/components/footer/Footer";
+import PlaceholderSVG from "@/app/resources/placeholderSVG";
 
-const placeholderSVG = (
-	<div className="border-2 border-black">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350" width="200" height="350">
-			<rect width="200" height="350" fill="#cccccc"></rect>
-			<text
-				x="50%"
-				y="50%"
-				dominant-baseline="middle"
-				text-anchor="middle"
-				font-family="monospace"
-				font-size="26px"
-				fill="#333333">
-				Image
-			</text>
-		</svg>
-	</div>
-);
-
-const BedAndBreakfastList = [
-	{
-		title: "BnB 1",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-	{
-		title: "BnB 2",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-	{
-		title: "BnB 3",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-];
-
-const FamilyOwnedInnList = [
-	{
-		title: "Inn 1",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-	{
-		title: "Inn 2",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-	{
-		title: "Inn 3",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-];
-
-const AffordableHostelList = [
-	{
-		title: "Hostel 1",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-	{
-		title: "Hostel 2",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-	{
-		title: "Hostel 3",
-		body: placeholderSVG,
-		buttonText: "Info",
-	},
-];
+const placeholderSVG = <PlaceholderSVG />;
 
 const Lodging = () => {
 	return (
 		<div className="">
 			<NavBar />
-			<div className="container flex flex-col mx-auto">
-				<SingleParagraphSection
-					title={"4-Star Resort"}
+			<div className="container flex flex-col mx-auto my-10 p-10 min-h-screen">
+				<SectionWithClass //prettier-ignore
+					title={"Lodging"}
 					body={
 						"Taniti has a wide variety of lading that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government."
 					}
+					classes={"mt-10"}
 				/>
-				<br />
-				<SectionWithClass //prettier-ignore
-					title={"Bed and Breakfast"}
-					body={BedAndBreakfastList.map(({ title, body, buttonText }) => (
-						<MediumCard key={title} title={title} body={body} buttonText={buttonText} />
+				<hr />
+				<SectionWithClass
+					title={"4-Star Resort"}
+					body={new Array(1).fill(undefined).map((_, index) => (
+						<MediumCard
+							key={index}
+							title={`Resort ${index + 1}`}
+							body={placeholderSVG}
+							buttonText={"Info"}
+						/>
 					))}
-					classes={"flex flex-wrap justify-between"}
+					classes={"flex flex-wrap justify-around mb-5"}
 				/>
-				<br />
-				<SectionWithClass //prettier-ignore
+				
+				<hr />
+				<SectionWithClass
+					title={"Bed and Breakfasts"}
+					body={new Array(3).fill(undefined).map((_, index) => (
+						<MediumCard
+							key={index}
+							title={`Bed and Breakfast ${index + 1}`}
+							body={placeholderSVG}
+							buttonText={"Info"}
+						/>
+					))}
+					classes={"flex flex-wrap justify-around mb-5"}
+				/>
+				<hr />
+				<SectionWithClass
 					title={"Family Owned Inns"}
-					body={FamilyOwnedInnList.map(({ title, body, buttonText }) => (
-						<MediumCard key={title} title={title} body={body} buttonText={buttonText} />
+					body={new Array(3).fill(undefined).map((_, index) => (
+						<MediumCard
+							key={index}
+							title={`Inn ${index + 1}`}
+							body={placeholderSVG}
+							buttonText={"Info"}
+						/>
 					))}
-					classes={"flex flex-wrap justify-between"}
+					classes={"flex flex-wrap justify-around mb-5"}
 				/>
-				<br />
-				<SectionWithClass //prettier-ignore
+				<hr />
+				<SectionWithClass
 					title={"Affordable Hostels"}
-					body={AffordableHostelList.map(({ title, body, buttonText }) => (
-						<MediumCard key={title} title={title} body={body} buttonText={buttonText} />
+					body={new Array(3).fill(undefined).map((_, index) => (
+						<MediumCard
+							key={index}
+							title={`Hostel ${index + 1}`}
+							body={placeholderSVG}
+							buttonText={"Info"}
+						/>
 					))}
-					classes={"flex flex-wrap justify-between"}
+					classes={"flex flex-wrap justify-around mb-5"}
 				/>
 			</div>
 			<Footer />
