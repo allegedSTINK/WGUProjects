@@ -13,10 +13,11 @@ const FAQ = () => {
 		<div>
 			<NavBar />
 			<div className="container flex flex-col mx-auto my-10 p-10">
+				<h1>FAQs</h1>
 				<SectionWithClass //prettier-ignore
-					title={"Lodging"}
+					title={""}
 					body={
-						"Almost all visitors arrive in Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the  next few year. "
+						"Most people visit Taniti to enjoy the beaches, explore the rainforest, and visit the volcano., However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the  rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow leaf Bay. Most Tourist spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. "
 					}
 					classes={"mt-10"}
 				/>

@@ -20,8 +20,9 @@ hr {
 }
 h1,
 h2,
-h3 {
-	@apply font-bold drop-shadow-md;
+h3,
+h4 {
+	@apply font-bold drop-shadow-md my-10;
 	color: #333;
 }
 h1 {
@@ -31,7 +32,10 @@ h2 {
 	@apply text-4xl;
 }
 h3 {
-	@apply text-2xl;
+	@apply text-3xl;
+}
+h4 {
+	@apply text-xl;
 }
 .active {
 	@apply border-b-2 border-black;

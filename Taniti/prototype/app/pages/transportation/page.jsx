@@ -13,14 +13,16 @@ const Transportation = () => {
 		<div>
 			<NavBar />
 			<div className="container flex flex-col mx-auto my-10 p-10">
+			<h1>Transportation</h1>
 				<SectionWithClass //prettier-ignore
-					title={"Transportation"}
+					title={""}
 					body={
 						"Almost all visitors arrive in Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the  next few year. "
 					}
 					classes={"mt-10"}
 				/>
 				<hr />
+				<h2 className="mx-auto">Land</h2>
 				<SectionWithClass
 					title={"Public Transit"}
 					body={new Array(3).fill(undefined).map((_, index) => (
@@ -47,6 +49,7 @@ const Transportation = () => {
 					classes={"flex flex-wrap justify-around mb-5"}
 				/>
 				<hr />
+				<h2 className="mx-auto">Sea</h2>
 				<SectionWithClass
 					title={"Cruise Liner"}
 					body={new Array(1).fill(undefined).map((_, index) => (
@@ -60,6 +63,7 @@ const Transportation = () => {
 					classes={"flex flex-wrap justify-around mb-5"}
 				/>
 				<hr />
+				<h2 className="mx-auto">Air</h2>
 				<SectionWithClass
 					title={"Private Jet Charters"}
 					body={new Array(2).fill(undefined).map((_, index) => (

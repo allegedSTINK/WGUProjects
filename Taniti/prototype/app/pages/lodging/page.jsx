@@ -13,8 +13,9 @@ const Lodging = () => {
 		<div className="">
 			<NavBar />
 			<div className="container flex flex-col mx-auto my-10 p-10 min-h-screen">
+			<h1>Lodging</h1>
 				<SectionWithClass //prettier-ignore
-					title={"Lodging"}
+					title={""}
 					body={
 						"Taniti has a wide variety of lading that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government."
 					}
@@ -22,7 +23,7 @@ const Lodging = () => {
 				/>
 				<hr />
 				<SectionWithClass
-					title={"4-Star Resort"}
+					title={"Taniti Resort"}
 					body={new Array(1).fill(undefined).map((_, index) => (
 						<MediumCard
 							key={index}
@@ -33,7 +34,6 @@ const Lodging = () => {
 					))}
 					classes={"flex flex-wrap justify-around mb-5"}
 				/>
-				
 				<hr />
 				<SectionWithClass
 					title={"Bed and Breakfasts"}

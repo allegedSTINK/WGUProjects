@@ -13,14 +13,16 @@ const Food = () => {
 		<div>
 			<NavBar />
 			<div className="container flex flex-col mx-auto my-10 p-10">
+				<h1>Food</h1>
 				<SectionWithClass //prettier-ignore
-					title={"Food"}
+					title={""}
 					body={
 						"Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine. Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day. "
 					}
 					classes={"mt-10"}
 				/>
 				<hr />
+				<h2 className="mx-auto">Restaurants</h2>
 				<SectionWithClass
 					title={"Local Fish and Rice"}
 					body={new Array(5).fill(undefined).map((_, index) => (
@@ -60,6 +62,7 @@ const Food = () => {
 					classes={"flex flex-wrap justify-around mb-5"}
 				/>
 				<hr />
+				<h2 className="mx-auto">Grocery Stores</h2>
 				<SectionWithClass
 					title={"Supermarkets"}
 					body={new Array(2).fill(undefined).map((_, index) => (
