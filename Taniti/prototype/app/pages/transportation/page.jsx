@@ -19,7 +19,7 @@ const Transportation = () => {
 					body={
 						"Almost all visitors arrive in Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the  next few year. "
 					}
-					classes={"mt-10"}
+					classes={"font-bold mt-10"}
 				/>
 				<hr />
 				<h2 className="mx-auto">Land</h2>

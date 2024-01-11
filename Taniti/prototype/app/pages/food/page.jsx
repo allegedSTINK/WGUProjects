@@ -19,7 +19,7 @@ const Food = () => {
 					body={
 						"Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine. Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day. "
 					}
-					classes={"mt-10"}
+					classes={"font-bold mt-10"}
 				/>
 				<hr />
 				<h2 className="mx-auto">Restaurants</h2>

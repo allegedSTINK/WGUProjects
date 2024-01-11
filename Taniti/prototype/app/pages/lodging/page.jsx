@@ -19,7 +19,7 @@ const Lodging = () => {
 					body={
 						"Taniti has a wide variety of lading that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government."
 					}
-					classes={"mt-10"}
+					classes={"font-bold mt-10"}
 				/>
 				<hr />
 				<SectionWithClass

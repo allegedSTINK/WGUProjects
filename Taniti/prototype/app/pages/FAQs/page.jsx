@@ -5,9 +5,9 @@ import Footer from "@/app/components/footer/Footer";
 import SectionWithClass from "@/app/components/sections/SectionWithClass";
 import MediumCard from "@/app/components/cards/MediumCard";
 import PlaceholderSVG from "@/app/resources/placeholderSVG";
+import { QAList as faqs } from "./QA";
 
 const placeholderSVG = <PlaceholderSVG />;
-
 const FAQ = () => {
 	return (
 		<div>
@@ -17,13 +17,14 @@ const FAQ = () => {
 				<SectionWithClass //prettier-ignore
 					title={""}
 					body={
-						"Most people visit Taniti to enjoy the beaches, explore the rainforest, and visit the volcano., However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the  rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow leaf Bay. Most Tourist spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. "
+						"Welcome to the FAQs page for Taniti! We understand that planning your trip can bring up a lot of questions, and we're here to provide you with all the information you need to make your journey to our beautiful island a seamless and unforgettable experience."
 					}
-					classes={"mt-10"}
+					classes={"font-bold mt-10"}
 				/>
 				<hr />
-				{null}
-				<hr />
+				{faqs.map(({ question, answer }, index) => (
+					<SectionWithClass key={index} title={question} body={answer} classes={"font-bold my-5"} />
+				))}
 			</div>
 			<Footer />
 		</div>
